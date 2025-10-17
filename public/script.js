@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('googleSignupBtn').addEventListener('click', async () => {
     const provider = new GoogleAuthProvider();
     try {
-      await auth.signInWithPopup(provider);
+      await signInWithPopup(provider);
     } catch (error) {
       alert(error.message);
     }
